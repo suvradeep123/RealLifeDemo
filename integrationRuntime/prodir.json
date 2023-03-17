@@ -1,0 +1,6 @@
+{
+	"name": "prodir",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
