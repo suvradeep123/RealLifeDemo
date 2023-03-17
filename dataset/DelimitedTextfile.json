@@ -1,0 +1,32 @@
+{
+	"name": "DelimitedTextfile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "realifesource2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Flname": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().Flname",
+					"type": "Expression"
+				},
+				"container": "rldemocontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,31 @@
+{
+	"name": "dsADLSTarget6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "6LSAzureDataLakeTarget",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"DestinationFile": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().DestinationFile",
+					"type": "Expression"
+				},
+				"fileSystem": "casestudy6targetadls"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

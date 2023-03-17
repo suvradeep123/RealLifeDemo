@@ -1,0 +1,9 @@
+{
+	"name": "RealLifeDemoADF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ced62707-ddf0-49ef-bb43-005a9f97326a",
+		"tenantId": "3357c6ea-a49f-4093-a96b-ed314bd7d994"
+	}
+}

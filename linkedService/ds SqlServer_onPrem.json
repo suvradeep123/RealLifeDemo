@@ -1,0 +1,16 @@
+{
+	"name": "ds SqlServer_onPrem",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=LAPTOP-QJ1J0TC0;initial catalog=localdb;user id=sa",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI4NWFmY2JiZS0xODEzLTRjYzMtYjMwMy1kZmMyMmQyMTI2MGIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "reallifeIR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

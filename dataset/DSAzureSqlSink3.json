@@ -1,0 +1,27 @@
+{
+	"name": "DSAzureSqlSink3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LSAzureSqlDatabaseSource",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "City",
+				"type": "varchar"
+			},
+			{
+				"name": "Cnt",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Address_Count"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
